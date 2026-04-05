@@ -1,0 +1,5 @@
+{
+  "name": "GlassOS",
+  "description": "A sleek, glassmorphism-inspired simulated desktop environment with draggable icons, a taskbar, and a start menu.",
+  "requestFramePermissions": []
+}

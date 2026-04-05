@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+  .glass-dark {
+    @apply bg-black/20 backdrop-blur-lg border border-white/10 shadow-2xl;
+  }
+  .glass-button {
+    @apply bg-black/20 backdrop-blur-lg border border-white/10 shadow-2xl hover:bg-white/20 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer;
+  }
+  .electron-drag {
+    -webkit-app-region: drag;
+  }
+  .electron-no-drag {
+    -webkit-app-region: no-drag;
+  }
+}
+
+body {
+  @apply overflow-hidden bg-slate-950 text-white font-sans;
+  background-image: radial-gradient(circle at top left, #1e293b, #0f172a);
+}
